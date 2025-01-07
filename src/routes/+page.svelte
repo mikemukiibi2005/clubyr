@@ -1,6 +1,9 @@
 <script lang="ts">
-    import { Button } from "@/components/ui/button/index.js";
     import Welcome from "./Welcome.svelte";
+    import Faq from "./FAQ.svelte";
 </script>
     
-<Welcome />
+<div>
+    <Welcome />
+    <Faq />
+</div>
