@@ -1,13 +1,14 @@
 <script lang="ts">
 	import "../app.css";
-	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-	import AppSidebar from "$lib/components/app-sidebar.svelte";
     import Footer from "./Footer.svelte";
 	
 	let { children } = $props();
 </script>
 
-<div class="container w-full mx-auto py-6">
+<div class="container w-full h-fit mx-auto py-6">
+	<a href="/">
+		<p class="text-center underline">clubyr.com</p>
+	</a>
 	<main>
 		{@render children?.()}
 	</main>
