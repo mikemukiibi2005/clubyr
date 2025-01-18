@@ -1,5 +1,6 @@
 import { pb } from "@/models/db";
 import type { Actions } from "./$types";
+import { redirect } from "@sveltejs/kit";
 
 export const actions: Actions = {
     signup: async ({request}) => {
@@ -16,6 +17,8 @@ export const actions: Actions = {
             "email":username?.toString(),
             "emailVisibility":true,
         })
+
+        // Set cookie
 
         return {success: true}
     }
