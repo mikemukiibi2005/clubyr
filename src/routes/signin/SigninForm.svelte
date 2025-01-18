@@ -13,7 +13,7 @@
                 <Mail />
                 <p class="font-light">Email</p>
             </span>
-            <input name="username" class="w-full border outline-none pl-3 py-1 font-light rounded-lg" />
+            <input name="email" class="w-full border outline-none pl-3 py-1 font-light rounded-lg" />
             
         </label>
         <label class="space-y-2">
