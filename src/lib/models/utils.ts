@@ -18,10 +18,10 @@ export const find_by_domain = async (domain:string) => {
 }
 
 // Find club by name
-export const search_by_name = async (search_string:string) => {
+export const search_by_name_or_domain = async (search_string:string) => {
     const results = await pb.collection("clubs").getList(1, 5,
         {
-            filter: `name?~"${search_string}"`
+            filter: `name?~"${search_string}" || domain?~"${search_string}"`
         }
     );
 

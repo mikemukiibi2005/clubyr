@@ -4,7 +4,7 @@
     let {name, category} = $props();
 </script>
 
-<div class="flex flex-row space-x-4">
+<div class="flex flex-row space-x-4" >
     <span class="">
         <CategoryIcon {category} />
     </span>
