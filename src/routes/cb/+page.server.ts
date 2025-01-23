@@ -1,10 +1,5 @@
-import { redirect } from "@sveltejs/kit";
-import type { Actions, PageServerLoad } from "./$types";
+import type { Actions } from "./$types";
 import { search_by_name_or_domain } from "@/models/utils";
-
-export const load: PageServerLoad = async ({params}) => {
-    return
-};
 
 export const actions: Actions = {
     search: async ({request}) => {
@@ -12,6 +7,7 @@ export const actions: Actions = {
         const data = await request.formData();
         const search_string = data.get("club")?.toString() || "";
 
+        // Search
         const results = await search_by_name_or_domain(search_string) as {name:string,domain:string}[];
 
         return {

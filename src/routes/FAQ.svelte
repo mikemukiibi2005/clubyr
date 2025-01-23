@@ -7,21 +7,19 @@
         <Accordion.Item value="item-1">
             <Accordion.Trigger>What is clubyr.com?</Accordion.Trigger>
             <Accordion.Content
-            >Yes. It adheres to the WAI-ARIA design pattern.</Accordion.Content
+            ><p class="inline underline">clubyr.com</p> is a hub for high school clubs to collaborate and grow.</Accordion.Content
             >
         </Accordion.Item>
         <Accordion.Item value="item-2">
             <Accordion.Trigger>What is our mission?</Accordion.Trigger>
             <Accordion.Content>
-            Yes. It comes with default styles that matches the other components'
-            aesthetic.
+            To connect clubs with similar goals and ambitions for the greater good.
             </Accordion.Content>
         </Accordion.Item>
         <Accordion.Item value="item-2">
             <Accordion.Trigger>What is our vision?</Accordion.Trigger>
             <Accordion.Content>
-            Yes. It comes with default styles that matches the other components'
-            aesthetic.
+            To become the leading hub for useful and lasting social connections, at high school and beyond.
             </Accordion.Content>
         </Accordion.Item>
         <Accordion.Item value="item-3">
