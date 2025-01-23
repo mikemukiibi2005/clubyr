@@ -10,7 +10,7 @@ export const load: PageServerLoad = async ({params}) => {
     }
 
     // Find club by domain
-    const { club }= await find_by_domain(club_domain);
+    const { club } = await find_by_domain(club_domain);
     const {id, name, domain, about, category} = club;
 
     return {
