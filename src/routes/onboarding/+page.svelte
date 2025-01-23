@@ -28,11 +28,12 @@
 </div>
 
 {#if form?.success}
-    <div class="container mx-auto">
-        <span class="flex flex-row space-x-1">
+    <div class="">
+        <span class="container mx-auto flex flex-row justify-center space-x-1">
             <Info />
-            <p>Created</p>
-            <p>{form?.id}</p>
+            <a href={`/cb/${form?.domain}/`}>
+                <p class="underline font-light text-sm">{`${form?.domain}.clubyr.com`}</p>
+            </a>
         </span>
     </div>
 {/if}

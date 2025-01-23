@@ -15,6 +15,6 @@ export const actions: Actions = {
             domain: club_domain,
         })
 
-        return {success: true, id: club_record.id}
+        return {success: true, id: club_record.id, domain: club_record.domain}
     }
 };

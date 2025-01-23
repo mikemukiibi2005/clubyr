@@ -1,6 +1,6 @@
 <script lang="ts">
     let {domain="*.clubyr.com"} = $props();
-    let full_domain = $derived.by(() => `${domain}.clubyr.com`)
+    let full_domain = $derived.by(() => `https://${domain}.clubyr.com`)
 </script>
 
 <div class="space-y-5">
