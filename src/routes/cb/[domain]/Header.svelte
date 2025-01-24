@@ -12,9 +12,9 @@
     let cover_src = $derived(`http://localhost:8090/api/files/${collection_id}/${id}/${cover_photo}`)
 </script>
 
-<div class="flex space-x-2">
+<div class="flex justify-center space-x-2">
     <CategoryIcon {category} />
-    <p class="inline w-full">{name}</p>
+    <p>{name}</p>
 </div>
 
 <div class="my-5">
