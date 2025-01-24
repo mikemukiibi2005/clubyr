@@ -2,9 +2,9 @@
     import * as Accordion from "@/components/ui/accordion/index";
    </script>
     
-<div class="w-11/12 my-6">
+<div class="w-full my-9">
     <Accordion.Root type="single" class="sm:max-w-[70%]">
-        <Accordion.Item value="item-1">
+        <Accordion.Item  value="item-1">
             <Accordion.Trigger>What is clubyr.com?</Accordion.Trigger>
             <Accordion.Content
             ><p class="inline underline">clubyr.com</p> is a hub for high school clubs to collaborate and grow.</Accordion.Content
