@@ -10,8 +10,7 @@
     <div class="">
         <form method="post" action="?/search" class="flex flex-col py-5 space-y-3">
             <label class="w-full">
-                <p class="text-center font-light text-sm">Search clubs</p>
-                <input type="text" name="club" id="" class="w-full outline-none border rounded-md pl-2 py-2 font-light text-sm text-center" />
+                <input type="text" placeholder="Search by name or domain..." name="club" id="" class="w-full outline-none border rounded-md pl-2 py-2 font-light text-sm text-center" />
                 {#if form?.success}
                     {#each form?.results as {name, domain}}
                         <div class="my-1">
@@ -23,8 +22,8 @@
                 {/if}
             </label>
             <Button class="mx-auto" type="submit">
-                Search
                 <Search />
+                Search
             </Button>
         </form>
     </div>
