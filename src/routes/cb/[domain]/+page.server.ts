@@ -11,7 +11,7 @@ export const load: PageServerLoad = async ({params}) => {
 
     // Find club by domain
     const { club } = await find_by_domain(club_domain);
-    const {id, name, domain, about, category} = club;
+    const {id, name, domain, about, category, cover, collectionId} = club;
 
     return {
         id,
@@ -19,5 +19,7 @@ export const load: PageServerLoad = async ({params}) => {
         domain,
         about,
         category,
+        cover_photo: cover,
+        collection_id: collectionId,
     }
 };

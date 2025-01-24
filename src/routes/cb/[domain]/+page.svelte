@@ -5,13 +5,19 @@
     import Stats from "./Stats.svelte";
 
     let { data } = $props();
-    let { name, domain, about, category } = data;
+    let { id, name, domain, about, category, cover_photo, collection_id } : {
+        id:string,
+        name:string,
+        domain:string,
+        about:string,
+        category:string,
+        cover_photo:string,
+        collection_id:string,
+    } = data;
 </script>
 
-<div class="container mx-auto py-5 space-y-5">
-    <div class="container mx-auto">
-        <Header {name} {category} />
-    </div>
+<div class="py-5 space-y-5">
+    <Header {id} {cover_photo} {name} {category} {collection_id} />
     <About {about} />
     <Domain {domain} />
     <Stats />

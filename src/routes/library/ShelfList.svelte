@@ -7,7 +7,7 @@
         "Physics",
         "Coding",
         "Best of Wole Soyinka",
-    ] satisfies string[]);
+    ] as string[]);
 </script>
 
 <div class="container mx-auto my-6 space-y-4">
