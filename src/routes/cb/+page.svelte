@@ -2,12 +2,13 @@
     import { Button } from '@/components/ui/button';
     import type { ActionData } from './$types';
     import { Search } from 'lucide-svelte';
+    import { enhance } from '$app/forms';
 
     let { form }: { form: ActionData } = $props();
 </script>
 
 <div class="">
-    <form method="post" action="?/search" class="flex flex-col py-5 space-y-3">
+    <form use:enhance method="post" action="?/search" class="flex flex-col py-5 space-y-3">
         <label class="w-full">
             <input type="text" placeholder="Search by name or domain..." name="club" id="" class="w-full outline-none border rounded-md pl-2 py-2 font-light text-sm text-center" />
             {#if form?.success}
