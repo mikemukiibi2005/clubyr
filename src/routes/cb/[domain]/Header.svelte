@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { env } from "$env/dynamic/private";
     import CategoryIcon from "./CategoryIcon.svelte";
 
     let {id, name, category, cover_photo, collection_id}: {
@@ -9,7 +10,7 @@
             collection_id:string,
         } = $props();
 
-    let cover_src = $derived(`http://localhost:8090/api/files/${collection_id}/${id}/${cover_photo}`)
+    let cover_src = $derived(`${env.POCKETBASE_URL}/${collection_id}/${id}/${cover_photo}`)
 </script>
 
 <div class="flex justify-center space-x-2">
