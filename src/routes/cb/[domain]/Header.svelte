@@ -1,16 +1,16 @@
 <script lang="ts">
-    import { env } from "$env/dynamic/public";
     import CategoryIcon from "./CategoryIcon.svelte";
 
-    let {id, name, category, cover_photo, collection_id}: {
+    let {id, name, category, cover_photo, collection_id, base_url}: {
             id:string,
             name:string,
             category:string,
             cover_photo:string,
             collection_id:string,
+            base_url:string
         } = $props();
 
-    let cover_src = $derived(`${env.POCKETBASE_URL}/${collection_id}/${id}/${cover_photo}`)
+    let cover_src = $derived(`${base_url}/${collection_id}/${id}/${cover_photo}`)
 </script>
 
 <div class="flex justify-center space-x-2">

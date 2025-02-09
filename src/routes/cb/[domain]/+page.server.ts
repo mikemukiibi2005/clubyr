@@ -1,6 +1,8 @@
 import { redirect } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
 import { find_by_domain } from "@/models/utils";
+import {env} from "$env/dynamic/public";
+import type { RecordModel } from "pocketbase";
 
 export const load: PageServerLoad = async ({params}) => {
     const club_domain = params.domain;
@@ -10,7 +12,7 @@ export const load: PageServerLoad = async ({params}) => {
     }
 
     // Find club by domain
-    const { club } = await find_by_domain(club_domain);
+    const { club } : {club: RecordModel} = await find_by_domain(club_domain);
     const {id, name, domain, about, category, cover, collectionId} = club;
 
     return {
@@ -21,5 +23,6 @@ export const load: PageServerLoad = async ({params}) => {
         category,
         cover_photo: cover,
         collection_id: collectionId,
+        base_url: env.POCKETBASE_URL
     }
 };
