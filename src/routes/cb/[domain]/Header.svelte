@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { env } from "$env/dynamic/private";
+    import { env } from "$env/dynamic/public";
     import CategoryIcon from "./CategoryIcon.svelte";
 
     let {id, name, category, cover_photo, collection_id}: {
