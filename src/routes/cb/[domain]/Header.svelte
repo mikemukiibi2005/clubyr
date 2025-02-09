@@ -10,7 +10,7 @@
             base_url:string
         } = $props();
 
-    let cover_src = $derived(`${base_url}/${collection_id}/${id}/${cover_photo}`)
+    let cover_src = `${base_url}/${collection_id}/${id}/${cover_photo}`;
 </script>
 
 <div class="flex justify-center space-x-2">

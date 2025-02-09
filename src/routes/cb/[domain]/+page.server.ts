@@ -1,7 +1,7 @@
 import { redirect } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
 import { find_by_domain } from "@/models/utils";
-import {env} from "$env/dynamic/public";
+import { env } from "$env/dynamic/public";
 import type { RecordModel } from "pocketbase";
 
 export const load: PageServerLoad = async ({params}) => {
@@ -23,6 +23,15 @@ export const load: PageServerLoad = async ({params}) => {
         category,
         cover_photo: cover,
         collection_id: collectionId,
-        base_url: env.POCKETBASE_URL
+        base_url: env.POCKETBASE_URL,
+    } satisfies {
+        id: string,
+        name:string,
+        domain:string,
+        about:string,
+        category:string,
+        cover_photo:string,
+        collection_id:string,
+        base_url:string,
     }
 };
