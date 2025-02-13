@@ -3,7 +3,7 @@
     import Faq from "./FAQ.svelte";
 </script>
     
-<div class="">
+<div class="md:w-1/2 mx-auto">
     <Welcome />
     <Faq />
 </div>
