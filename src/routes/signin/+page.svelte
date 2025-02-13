@@ -4,7 +4,7 @@
     import SigninForm from "./SigninForm.svelte";
 
 </script>
-<div class="">
+<div class="md:w-1/2 mx-auto">
     <Header />
     <SigninForm />
     <div class="my-5 flex justify-center space-x-2">
