@@ -2,13 +2,12 @@
     import * as Accordion from "@/components/ui/accordion/index";
    </script>
     
-<div class="w-full my-9">
-    <Accordion.Root type="single" class="sm:max-w-[70%]">
+<div class="my-9 mx-auto">
+    <Accordion.Root type="single" class="">
         <Accordion.Item  value="item-1">
             <Accordion.Trigger>What is clubyr.com?</Accordion.Trigger>
             <Accordion.Content
-            ><p class="inline underline">clubyr.com</p> is a hub for high school clubs to collaborate and grow.</Accordion.Content
-            >
+            ><p class="inline underline">clubyr.com</p> is a hub for high school clubs to collaborate and grow.</Accordion.Content>
         </Accordion.Item>
         <Accordion.Item value="item-2">
             <Accordion.Trigger>What is our mission?</Accordion.Trigger>

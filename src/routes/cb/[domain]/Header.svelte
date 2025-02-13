@@ -9,7 +9,7 @@
             collection_id:string,
         } = $props();
 
-    let cover_src = $derived(`http://localhost:8090/api/files/${collection_id}/${id}/${cover_photo}`)
+    let cover_src = `http://localhost:8090/api/files/${collection_id}/${id}/${cover_photo}`;
 </script>
 
 <div class="flex justify-center space-x-2">

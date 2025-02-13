@@ -3,10 +3,7 @@
     import { Search } from "lucide-svelte";
 </script>
 
-<div class="mx-auto flex flex-row space-x-2">
-    
-    <Button href="/cb/" class="button text-center mx-auto">
-        <Search />
-        Find your club
-    </Button>
-</div>
+<Button href="/cb/" class="button text-center">
+    <Search />
+    Find your club
+</Button>
