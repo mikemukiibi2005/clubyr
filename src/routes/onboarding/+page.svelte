@@ -5,7 +5,7 @@
     let {form} = $props();
 </script>
 
-<div class="my-8">
+<div class="md:w-1/2 mx-auto my-8">
     <p class="font-extralight text-center text-lg my-5">
         Get started...
     </p>
