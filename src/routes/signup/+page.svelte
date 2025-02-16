@@ -6,7 +6,7 @@
 
 </script>
 
-<div class="mb-5">
+<div class="md:w-1/2 mx-auto mb-5">
     <Header />
     <SignupForm />
     <div class="my-5 flex justify-center space-x-2">

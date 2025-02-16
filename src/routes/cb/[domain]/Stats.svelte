@@ -2,7 +2,7 @@
     let {stats="This club has many users."} = $props();
 </script>
 
-<div class="space-y-5">
+<div class="md:w-1/2 mx-auto space-y-5">
     <span class="flex flex-row space-x-2">
         <p class="font-light">Stats</p>
     </span>

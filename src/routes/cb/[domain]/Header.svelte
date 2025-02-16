@@ -18,7 +18,7 @@
     <p>{name}</p>
 </div>
 
-<div class="my-5">
+<div class="md:w-1/2 mx-auto my-5">
     <figure>
         <!-- svelte-ignore a11y_missing_attribute -->
         <img class="rounded-md w-full" src={cover_src} />
